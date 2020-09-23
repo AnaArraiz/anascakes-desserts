@@ -133,6 +133,33 @@ hr{
     margin-bottom: 10px;
 }
 
+/*cocina saludable*/
+.news-healthy-food{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    color: #f429af;
+    margin: 10px 0;
+}
+
+.news-healthy-food img{
+    width: 90%;
+    height: 180px;
+}
+.news-healthy-food article{
+    background: white;
+    text-align: center;
+}
+
+.news-healthy-food article img{
+    margin-top: 10px;
+}
+.news-healthy-food article p{
+    margin-bottom: 10px;
+}
+
+
 /*social*/
 
 .social {
