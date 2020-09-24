@@ -9,7 +9,6 @@ body{
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f429af' fill-opacity='0.13' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");;
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
-    
 }
 
 a{
@@ -28,7 +27,8 @@ body img{
 
 h2{
     background: #f429af;
-    padding: 10px 20px;
+    padding: 15px 20px;
+    
 }
 
 .nav-main{
@@ -48,7 +48,7 @@ h2{
 .nav-main h2{
     flex: 1;
     margin-left: 20px;
-    margin-right: 20px;
+    
 }
 
 /*showcase*/
@@ -65,19 +65,56 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 18px; 
+    font-size: 20px; 
     color:white;
     text-align: center;
-    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);    
 }
 
-.showcase:hover{
-    background:url('./img/cakepina2-desenfoque.jpg') no-repeat center center/cover;
+.showcase h3 {
     font-size: 24px;
 }
 
 .showcase:hover h3{
+    font-size: 36px;
+}
+.showcase:hover p{
+    font-size: 30px;
+}
+
+.showcase:hover{
+    background:url('./img/cakepina2-desenfoque.jpg') no-repeat center center/cover;
     
+}
+
+.showcase:hover h3{
+       
+}
+/*info*/
+.info{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.info p{
+    background: white;
+    color: #f429af;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 10px 20px 30px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+}
+.info h3{
+    text-align: center;
+    color: #f429af;
+    font-size: 120px;
 }
 
 /*newscards*/
@@ -86,7 +123,9 @@ hr{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
     color: #f429af;
-    margin: 10px 0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+
 }
 
 .news-cards img{
@@ -98,6 +137,9 @@ hr{
 .news-cards article{
     background: white;
     text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
 }
 
 .news-cards article img{
@@ -114,7 +156,8 @@ hr{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
     color: #f429af;
-    margin: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .news-desserts img{
@@ -124,6 +167,9 @@ hr{
 .news-desserts article{
     background: white;
     text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
 }
 
 .news-desserts article img{
@@ -140,7 +186,8 @@ hr{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
     color: #f429af;
-    margin: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .news-healthy-food img{
@@ -150,6 +197,9 @@ hr{
 .news-healthy-food article{
     background: white;
     text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
+    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
 }
 
 .news-healthy-food article img{
@@ -180,6 +230,11 @@ hr{
     font-size: 40px;
     align-items: center;
     justify-content: center;
+    
+}
+
+.links a{
+    padding: 20px;
 }
 
 .footer{
@@ -191,6 +246,7 @@ hr{
     background: white;
 }
 
+
 @media (max-width:700px){
     .nav-main{
         font-size: 10px;
@@ -200,5 +256,8 @@ hr{
     }
     .news-desserts{
         grid-template-columns: repeat(2,1fr);
+    }
+    .news-healthy-food{
+        grid-template-columns: repeat(2,1fr) ;
     }
 }
