@@ -1,5 +1,3 @@
-
-
     ScrollReveal().reveal('.showcase');
     ScrollReveal().reveal('.info', { delay: 300 });
     ScrollReveal().reveal('.newscards', { delay: 300 });
