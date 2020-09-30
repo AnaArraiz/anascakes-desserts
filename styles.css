@@ -4,134 +4,222 @@
     padding: 0%;
 }
 
-body{
-    background: background-color: #DFDBE5;
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f429af' fill-opacity='0.13' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");;
+body{ 
+    background-color: white;   
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
 }
 
-a{
-    color: #f429af;
-}
-.container {
-    width: 90%;
-    margin: 5px auto;
- 
-}
-
-body img{
-    width: 15%;
-    height: auto;
-}
-
-h2{
-    background: #f429af;
-    padding: 15px 20px;
-    
+nav{
+    width: 100%; 
+    height: 100px;
+    background: #545454;
 }
 
 .nav-main{
-    font-size: 20px;
-    display: flex;
+    display:flex;
     justify-content: space-between;
-    align-items: center;
-    height: 120px;
-    padding: 20px 0;
-    
+    align-items: center; /*centrar verticalmente*/
+}
+
+.nav-main img{
+    width: 10%;
+    padding-left: 20px;
+}
+
+.nav-main h2 {
+    flex: 1;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 40px;
 }
 
 .nav-main a{
-    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;  
 }
 
-.nav-main h2{
-    flex: 1;
-    margin-left: 20px;
-    
+.nav-main .links a{
+    padding: 5px;
+    padding-right: 15px;
+}
+.nav-main .links a:hover{
+    border-bottom: 2px solid #fff;
 }
 
-/*showcase*/
-hr{
-    margin-bottom: 5px;
-}
 .showcase{
+    
     width: 100%;
-    height: 400px;
+    height: 520px;
+    margin-top: 8px;
     background:url('./img/cakepinaOpacity.png') no-repeat center center/cover;
-    padding-bottom: 50px;
-    padding: 50px;
+    /* padding-bottom: 50px; */
+    padding: 30px;
     margin-bottom: 20px;
+
     display: flex;
-    flex-direction: column;
+     flex-direction: column; 
+    align-content: center;
     justify-content: flex-end;
-    font-size: 20px; 
-    color:white;
-    text-align: center;
+    
+
+    /* display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; */
+
     -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
     -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
-    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);    
-}
+    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1); 
+      
+} 
 
 .showcase h3 {
     font-size: 24px;
+    color:white;
+    text-align: center;
+}
+.showcase p{
+    font-size: 20px;
+    color:white;
+    text-align: center;
 }
 
 .showcase:hover h3{
-    font-size: 36px;
+    font-size: 34px;
 }
 .showcase:hover p{
-    font-size: 30px;
+    color:white;
+    font-size: 22px;
 }
 
 .showcase:hover{
     background:url('./img/cakepina2-desenfoque.jpg') no-repeat center center/cover;
-    
+
 }
 
-.showcase:hover h3{
+/*MAIN*/
+
+.container-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ /*info*/
+.container-info {
+    width: 100%;
+    height: 450px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #54545454;    
+}
+
+.container-info .subtitle{
+    margin-top: 10px;
+    color: #fff;
+}
+
+.info-elements{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info-elements .info-text{
+    width: 65%;
+    height: 320px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+.info-elements .aside{
+    width: 30%;
+    height: 320px;
+    
+    text-align: center;
+}
+.info-elements .aside img{
+    width: 65%;
+    height: auto;
+    border-radius: 50px;
+    align-content: center;
        
 }
-/*info*/
-.info{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
 
+
+/*TORTAS*/
+.container-newscards {
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden; /*oculta todo lo que desborde*/
+    /* margin: auto; */
+    align-items: center;
+    /* background-image: linear-gradient(120deg, #f193fbd3 0%, #f5576ccc 100%); */
+    background-color: #fff;
+    margin-bottom: 25px;
+    color: #000;
+    border: 1px solid black;
 }
 
-.info p{
-    background: white;
-    color: #f429af;
-    text-align: left;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 30px 10px 20px 30px;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
-    box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
-}
-.info h3{
+.subtitle{
+    width: 100%;
     text-align: center;
-    color: #f429af;
-    font-size: 120px;
-}
-
-/*newscards*/
-.news-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px;
-    color: #f429af;
     margin-top: 25px;
     margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;   
+}
+
+.news-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.cakes{
+    width: 40%;
+    height: 500px;
+
+    color: #000000;
+    margin-bottom: 25px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.cakes img{
+    width: 90%;
+    height: 70%;
+    align-self: center;
+    
+}
+
+.cards-subtitle{
+    font-size: 20px;
+    margin-top: 10px;
 
 }
 
-.news-cards img{
-    width: 90%;
-    height: 180px;
-    
+.cards-text{
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000;
+    margin-top: 10px;
 }
 
 .news-cards article{
@@ -143,58 +231,94 @@ hr{
 }
 
 .news-cards article img{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .news-cards article p{
     margin-bottom: 10px;
 }
 
-.news-desserts{
-    margin-top: 10px;
-    display: grid;
+/*POSTRES*/
+
+.desserts-section{
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px;
-    color: #f429af;
+    gap: 25px; */
+    width: 100%;
+    height: 650px;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: #54545454;
+    color: black;
 }
 
-.news-desserts img{
-    width: 90%;
-    height: 180px;
+.desserts-section .subtitle{
+    color: #000000;
 }
-.news-desserts article{
+
+.desserts-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.desserts{
+    width: 40%;
+    height: 500px;
+    font-size: 20px;
+
     background: white;
     text-align: center;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
     -moz-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
     box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
 }
-
-.news-desserts article img{
+.desserts img{
+    width: 90%;
+    height: 70%;
     margin-top: 10px;
 }
-.news-desserts article p{
+
+.desserts h3{
+    margin-top: 10px;
+}
+.desserts p{
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
 /*cocina saludable*/
-.news-healthy-food{
+
+.section-healthy-food{
+    width: 100%;
+    max-width: 1400px;
+    
     margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px;
-    color: #f429af;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
-.news-healthy-food img{
-    width: 90%;
-    height: 180px;
+.healthy-foods{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.news-healthy-food article{
+
+.section-healthy-food .subtitle{
+    color: #000000;
+    margin-top: 20px;
+}
+
+.foods{
+    width: 40%;
+    height: 500px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
     background: white;
     text-align: center;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
@@ -202,62 +326,195 @@ hr{
     box-shadow: 10px 10px 5px 0px rgba(191,180,191,1);
 }
 
-.news-healthy-food article img{
+.foods img{
+    width: 90%;
+    height: 70%;
     margin-top: 10px;
 }
-.news-healthy-food article p{
+
+.foods h3{
+    margin-top: 10px;
+}
+.foods p{
+    margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-
-/*social*/
-
-.social {
-    margin: 50px;
-
+.section-social{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    background-color: #545454;
+    border: 1px solid black;
 }
 
-.social p{
+.section-social .subtitle{
     text-align: center;
     font-size: 30px;
-    margin-bottom: 20px;
-    color: #f429af;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#fff;
     
 }
 
-.links {
-    display:flex;
+.section-social .links{
+    text-align: center;
+    
     font-size: 40px;
-    align-items: center;
-    justify-content: center;
-    
 }
-
-.links a{
+.section-social .links a{
+    
     padding: 20px;
+    color:#fff;
+    
 }
 
 .footer{
-
-    text-align: center;
-    font-size: 18px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    color: #f429af;
-    background: white;
+    display: flex;
+    
+} 
+
+.footer .subtitle{
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    padding: 0;
+    margin-top: 5px;
 }
 
+@media screen and (max-width:1300px){
 
-@media (max-width:700px){
+    .container-info {
+        height: 350px;}
+    .info-elements .info-text{
+        font-size: 18px;
+    }
+    .cakes{
+        width: 35%;
+        height: 300px;
+        }
+        .cakes .cards-text,.cards-subtitle{
+            font-size: 15px;
+            padding: 0;
+            margin: 0;
+        }
+        .desserts-section{
+            height: 500px;
+        }
+        .desserts{
+            width: 40%;
+            height: 300px;}
+        .desserts h3,p{
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .foods{
+            height: 300px;
+        }
+        .foods h3,p{
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+}
+
+@media screen and (max-width:900px){
+    .nav-main h2{
+        font-size: 30px;
+    }
+    .nav-main .links a{
+        font-size: 15px;
+    }
+    .container-info .subtitle{
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:700px){
     .nav-main{
         font-size: 10px;
     }
-    .news-cards{
-        grid-template-columns: repeat(2,1fr);
+    .nav-main h2{
+        font-size: 20px;
     }
-    .news-desserts{
-        grid-template-columns: repeat(2,1fr);
+    .nav-main .links a{
+        font-size: 10px;
     }
-    .news-healthy-food{
-        grid-template-columns: repeat(2,1fr) ;
+    .container-info{
+        
+        width: 100%;
+        height: auto;
+    }
+    .info-elements{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+    .container-info .subtitle{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
+    .info-elements .info-text{
+        width: 100%;
+        margin: 5px;
+        padding: 0;
+        font-size: 10px;
+        height: auto;
+        
+    }
+    .info-elements .aside{
+        width: 30%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .cakes{
+        width: 40%;
+        height: 300px;
+        }
+    .cakes .cards-text,.cards-subtitle{
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    .desserts-section{
+        height: 450px;
+    }
+    .desserts{
+        width: 40%;
+        height: 300px;}
+    .desserts h3,p{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .foods{
+        height: 300px;
+    }
+    .foods h3,p{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+    .section-social{
+        height: 80px;
+    }
+    .section-social .subtitle,.links a{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
     }
 }
