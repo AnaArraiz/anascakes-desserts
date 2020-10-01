@@ -10,29 +10,45 @@ body{
     color: white;
 }
 
-nav{
+.cabeza{
     width: 100%; 
     height: 100px;
+    background: #545454a4;
+    display:flex;
+    justify-content: space-between;
+    align-items: left;
+    
+}
+
+.cabeza img{
+    height: 90%;
+    width:auto;
+    padding-left: 20px;
+    
+    
+}
+
+.cabeza h2 {
+    /* flex: 1; */
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    text-align: right;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+
+nav{
+    width: 100%; 
+    height: 50px;
     background: #545454;
+    margin-top: 5px;
+    padding-top: 10px;
 }
 
 .nav-main{
-    display:flex;
+    /* display:flex;
     justify-content: space-between;
-    align-items: center; /*centrar verticalmente*/
-}
-
-.nav-main img{
-    width: 10%;
-    padding-left: 20px;
-}
-
-.nav-main h2 {
-    flex: 1;
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
-    text-align: left;
-    margin-left: 40px;
+    align-items: center; centrar verticalmente */
 }
 
 .nav-main a{
@@ -54,7 +70,7 @@ nav{
     
     width: 100%;
     height: 520px;
-    margin-top: 8px;
+    margin-top: 5px;
     background:url('./img/cakepinaOpacity.png') no-repeat center center/cover;
     /* padding-bottom: 50px; */
     padding: 30px;
@@ -426,6 +442,10 @@ nav{
 }
 
 @media screen and (max-width:900px){
+    .nav-main .logo{
+        width: 10%;
+        padding: 0;
+    }
     .nav-main h2{
         font-size: 30px;
     }
@@ -443,11 +463,12 @@ nav{
     .nav-main{
         font-size: 10px;
     }
-    .nav-main h2{
-        font-size: 20px;
+    .cabeza h2{
+       font-size: 30px;
+       padding-top: 25px; 
     }
     .nav-main .links a{
-        font-size: 10px;
+        font-size: 15px;
     }
     .container-info{
         
@@ -485,7 +506,7 @@ nav{
         height: 300px;
         }
     .cakes .cards-text,.cards-subtitle{
-        font-size: 15px;
+        font-size: 12px;
         padding: 0;
         margin: 0;
     }
@@ -496,9 +517,28 @@ nav{
         width: 40%;
         height: 300px;}
     .desserts h3,p{
-        font-size: 15px;
+        font-size: 12px;
         margin: 0;
         padding: 0;
     }
 
+}
+
+@media screen and (max-width:500px){
+ 
+    .cakes{
+        width: 60%;
+        height: 300px;
+        }
+    .desserts-section{
+        height: 800px;
+    }
+    .desserts{
+        width: 60%;
+        height: 300px;
+        margin-top: 20px;}
+    .foods{
+        width: 60%;
+        height: 300px;
+    }
 }
