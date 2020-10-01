@@ -4,6 +4,10 @@
     padding: 0%;
 }
 
+:root{  /*pseudoclase root*/
+    scroll-behavior: smooth;  /*controlar el comportamiento del scroll, este efecto hace que al presionar los linnks, las pagina se desplace al id como si se estuviera haciendo scroll al mouse*/
+}
+
 body{ 
     background-color: white;   
     font-family: 'Roboto Condensed', sans-serif;
@@ -442,13 +446,7 @@ nav{
 }
 
 @media screen and (max-width:900px){
-    .nav-main .logo{
-        width: 10%;
-        padding: 0;
-    }
-    .nav-main h2{
-        font-size: 30px;
-    }
+
     .nav-main .links a{
         font-size: 15px;
     }
@@ -525,7 +523,14 @@ nav{
 }
 
 @media screen and (max-width:500px){
- 
+    .cabeza img{
+        height: 70%;
+        padding-top: 20px;
+    }
+    .cabeza h2{
+        font-size: 24px;
+        padding-top: 25px; 
+     }
     .cakes{
         width: 60%;
         height: 300px;
@@ -540,5 +545,11 @@ nav{
     .foods{
         width: 60%;
         height: 300px;
+    }
+    .section-social .subtitle{
+        font-size: 20px ;
+    }
+    .footer .subtitle{
+        font-size: 14px;
     }
 }
